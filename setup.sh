@@ -11,11 +11,7 @@ sh new/.ssh/generate-key.sh
 # Login with created ssh key.
 gh auth login
 
-mkdir .dotfiles/
-git clone git@github.com:bl4z1ng/dotfiles.git .dotfiles
-
 # Apps
-
 # Pick one?
 # Configure zen-config here: https://github.com/bl4z1ng/zen-config
 #brew install --cask zen

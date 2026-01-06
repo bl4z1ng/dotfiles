@@ -11,3 +11,6 @@ ln -s .dotfiles/.gitconfig .gitconfig
 
 #code
 ln -s .dotfiles/.code .code
+
+#ssh
+ln -s .dotfiles/ssh/config .ssh/config
