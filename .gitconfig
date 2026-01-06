@@ -1,3 +1,16 @@
 [user]
 	email = without.auth0@gmail.com
 	name = bl4z1ng
+[init]
+	defaultBranch = main
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+[core]
+	editor = code
+[alias]
+	s = status
+[help]
+	autocorrect = prompt

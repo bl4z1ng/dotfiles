@@ -1,0 +1,6 @@
+.DS_Store
+
+.config/raycast/*
+!.config/raycast/export
+
+**/.vscode
