@@ -1,19 +1,39 @@
-# Install brew
+sh 
+
+# brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# default config dir, that many projects use
+ln -s -F $HOME/.dotfiles/.config $HOME/.config
+
+# terminal + shell
+ln -s -F .dotfiles/.zshrc .zshrc
+brew install zsh
+chsh -s $(which zsh)
+brew install --cask ghostty
+brew install fzf
+
+# git
+ln -s -F $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
+#ssh
 brew install git
 brew install gh
-
 # ssh key gen.
-sh new/.ssh/generate-key.sh
-
+mkdir $HOME/.ssh/
+ln -s -F $HOME/.dotfiles/ssh/config $HOME/.ssh/config
+sh $HOME/ssh/generate-key.sh
 # Login with created ssh key.
 gh auth login
 
-# Apps
-# Pick one?
-# Configure zen-config here: https://github.com/bl4z1ng/zen-config
+# fonts
+brew install --cask font-jetbrains-mono-nerd-font
+brew install --cask font-fira-code-nerd-font
+brew install --cask font-monaspace
+
+# apps
+# pick one?
+# configure zen-config here: https://github.com/bl4z1ng/zen-config
 #brew install --cask zen
 brew install --cask arc
 
@@ -22,17 +42,17 @@ brew install --cask raycast
 brew install --cask ticktick
 brew install --cask telegram-desktop
 
+#code
 brew install --cask visual-studio-code
-brew install --cask ghostty
+# TODO: add c
+#ln -s -F $HOME/.dotfiles/.code $HOME/.code
 
-# Utilities
-# Shortcuts cheat sheet
+# utilities
+# shortcuts cheat sheet
 brew install --cask keyclu
-# Menu bar management
+# menu bar management
 brew install --cask jordanbaird-ice
-# Archive manager
+# archive manager
 brew install --cask the-unarchiver
-# Turn off apple music popups
+# turn off apple music popups
 brew install --cask notunes
-# Google Drive
-#brew install --cask google-drive

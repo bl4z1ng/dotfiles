@@ -1,0 +1,33 @@
+# Window
+background-blur = 20
+background-opacity = 0.8
+window-height = 30
+window-width = 110
+window-step-resize = true
+macos-titlebar-style = transparent
+window-colorspace = display-p3
+# remembers window position and pwd after quit 
+#window-save-state = always
+
+theme = Monokai Pro Spectrum
+
+# Text and fonts
+cursor-style = bar
+font-size = 14
+
+font-family = FiraCode Nerd Font Mono
+adjust-cell-height = 4
+adjust-cursor-height = 4
+
+#font-family = JetBrainsMono Nerd Font Mono
+#adjust-cell-height = 4
+#adjust-cursor-height = 4
+
+# Integration
+shell-integration = zsh
+
+# Keybindings
+# drop-down Quake-like terminal for quick commands, unnecessary?
+#keybind = global:cmd+backquote=toggle_quick_terminal
+
+keybind = performable:cmd+c=copy_to_clipboard
