@@ -14,6 +14,8 @@ ZSH_THEME="sorin"
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
+source $ZSH/oh-my-zsh.sh
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -68,12 +70,13 @@ ZSH_THEME="sorin"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
 
 # User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -101,13 +104,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-#fzf
-source <(fzf --zsh)
-
 br() {
     #--preview will show the result of call from passed param, e.g. here, git show returns commit info
     #{-1} : last token, used to ignore leading symbols, that git returns
     #--bind connects key input (enter) to become action (git checkout)
     git branch | fzf --preview 'git show --color=always {-1}' --bind 'enter:become(git checkout {-1})' --height 40% --layout reverse
 }
+
+source <(fzf --zsh)
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

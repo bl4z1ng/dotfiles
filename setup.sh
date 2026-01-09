@@ -8,7 +8,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ln -s -F $HOME/.dotfiles/.config $HOME/.config
 
 # terminal + shell
-ln -s -F $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
+ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 brew install zsh
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
