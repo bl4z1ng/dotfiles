@@ -3,6 +3,13 @@
 	name = bl4z1ng
 [init]
 	defaultBranch = main
+[status]
+	branch = true
+	showStash = true
+	showUntrackedFiles = true
+[diff]
+	renames = copies
+	interHunkContext = 10
 [color]
 	diff = auto
 	status = auto
@@ -10,7 +17,5 @@
 	ui = true
 [core]
 	editor = code
-[alias]
-	s = status
 [help]
 	autocorrect = prompt

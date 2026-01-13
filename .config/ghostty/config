@@ -13,13 +13,10 @@ theme = Monokai Pro Spectrum
 
 # Text and fonts
 cursor-style = bar
-font-size = 14
+font-family = JetBrainsMono Nerd Font Mono
+font-size = 16
 
-font-family = FiraCode Nerd Font Mono
-adjust-cell-height = 4
-adjust-cursor-height = 4
-
-#font-family = JetBrainsMono Nerd Font Mono
+#font-family = FiraCode Nerd Font Mono
 #adjust-cell-height = 4
 #adjust-cursor-height = 4
 

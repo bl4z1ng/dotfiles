@@ -1,4 +1,7 @@
-sh 
+# inspo:
+# https://github.com/topics/dotfiles
+# https://github.com/trolund/dotfiles/blob/master/.zsh
+# https://github.com/andrew8088/dotfiles
 
 # brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -6,6 +9,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # default config dir, that many projects use
 ln -s -F $HOME/.dotfiles/.config $HOME/.config
+
+# fonts
+brew install --cask font-jetbrains-mono-nerd-font
+brew install --cask font-fira-code-nerd-font
+brew install --cask font-monaspace
 
 # terminal + shell
 ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
@@ -26,11 +34,6 @@ ln -s -F $HOME/.dotfiles/ssh/config $HOME/.ssh/config
 sh $HOME/ssh/generate-key.sh
 # Login with created ssh key.
 gh auth login
-
-# fonts
-brew install --cask font-jetbrains-mono-nerd-font
-brew install --cask font-fira-code-nerd-font
-brew install --cask font-monaspace
 
 # apps
 # pick one?
