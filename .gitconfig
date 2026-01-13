@@ -7,14 +7,31 @@
 	branch = true
 	showStash = true
 	showUntrackedFiles = true
+[log]
+	abbrevCommit = true # short commit hash
+	graphColors = blue,yellow,cyan,magenta,green,red
 [diff]
+	# changes for more pleasing diff view
 	renames = copies
 	interHunkContext = 10
+[push]
+	# automatically set remote branch, if not yet set
+	autoSetupRemote = true
 [color]
 	diff = auto
 	status = auto
-	branch = auto
 	ui = true
+[color "decorate"] # color scheme for output
+	HEAD = red
+	tag = yellow
+	branch = magenta
+	remoteBranch = green
+[color "branch"]
+	current = magenta
+	local = default
+	remote = green
+	upstream = green
+	plain = blue
 [core]
 	editor = code
 [help]

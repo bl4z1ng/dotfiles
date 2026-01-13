@@ -1,14 +1,11 @@
 export PATH=/opt/homebrew/bin:$PATH
 
-# Path to your OMZ install.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh" # path to your OMZ install.
 zstyle ':omz:update' mode disabled  # disable automatic updates
 
-# https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="sorin"
+ZSH_THEME="sorin" # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
-# stamp shown in the history command outputs
-HIST_STAMPS="dd.mm.yyyy"
+HIST_STAMPS="dd.mm.yyyy" # stamp shown in the history command outputs
 
 # editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then

@@ -1,4 +1,5 @@
 # inspo:
+# https://github.com/codingjerk/dotfiles
 # https://github.com/topics/dotfiles
 # https://github.com/trolund/dotfiles/blob/master/.zsh
 # https://github.com/andrew8088/dotfiles
@@ -60,3 +61,5 @@ brew install --cask jordanbaird-ice
 brew install --cask the-unarchiver
 # turn off apple music popups
 brew install --cask notunes
+# man iteration with examples 
+brew install tlrc

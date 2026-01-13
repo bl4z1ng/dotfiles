@@ -10,6 +10,15 @@ alias reload='exec zsh'
 #git
 alias gs='git status'
 
+# %C - color
+# %h - commit hash
+# %an - autor name
+# %ar - commit time
+# %D - ref names
+# %s - commit message
+# %n - new line
+alias gl='git log --stat --graph --all --pretty=format:"%C(magenta)%h %C(white) %an  %ar%C(auto)  %D%n%s%n"'
+
 br() {
     #--preview will show the result of call from passed param, e.g. here, git show returns commit info
     #{-1} : last token, used to ignore leading symbols, that git returns
