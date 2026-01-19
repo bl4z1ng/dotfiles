@@ -20,8 +20,8 @@ alias gs='git status'
 alias gl='git log --stat --graph --all --pretty=format:"%C(magenta)%h %C(white) %an  %ar%C(auto)  %D%n%s%n"'
 
 br() {
-    #--preview will show the result of call from passed param, e.g. here, git show returns commit info
-    #{-1} : last token, used to ignore leading symbols, that git returns
-    #--bind connects key input (enter) to become action (git checkout)
+    # --preview will show the result of call from passed param, e.g. here, git show returns commit info
+    # {-1} : last token, used to ignore leading symbols, that git returns
+    # --bind connects key input (enter) to become action (git checkout)
     git branch | fzf --preview 'git show --color=always {-1}' --bind 'enter:become(git checkout {-1})' --height 40% --layout reverse
 }

@@ -49,12 +49,13 @@ brew install --cask telegram-desktop
 
 #code
 brew install --cask visual-studio-code
-# TODO: add c
+brew install --cask zed
+# TODO: add code
 #ln -s -F $HOME/.dotfiles/.code $HOME/.code
 
 # utilities
 # shortcuts cheat sheet
-brew install --cask keyclu
+#brew install --cask keyclu
 # menu bar management
 brew install --cask jordanbaird-ice
 # archive manager

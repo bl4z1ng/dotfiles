@@ -1,6 +1,13 @@
 .DS_Store
 
+# raycast
 .config/raycast/*
 !.config/raycast/export
+
+# zed, vscode
+.config/zed/*
+!.config/zed/themes
+!.config/zed/keymap.json
+!.config/zed/settings.json
 
 **/.vscode
