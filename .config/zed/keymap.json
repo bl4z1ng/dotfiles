@@ -23,5 +23,44 @@
     "bindings": {
       "cmd-k": "command_palette::Toggle",
     },
+  },
+  {
+      "context": "Workspace",
+      "bindings": {
+        "ctrl-`": "workspace::ToggleBottomDock"
+      }
+  },
+  {
+      "context": "Editor || Workspace",
+      "bindings": {
+        "ctrl-shift-e": "workspace::ToggleLeftDock"
+      }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "enter": "project_panel::OpenPermanent"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-t": "file_finder::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-g": "git_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-g": null
+    }
+  },
+  {
+    "bindings": {
+      "cmd-e": "project_panel::ToggleFocus"
+    }
   }
 ]

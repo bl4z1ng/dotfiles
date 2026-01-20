@@ -4,7 +4,7 @@
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 
-alias dots='cd $HOME/.dotfiles && code .'
+alias dots='cd $HOME/.dotfiles && zed .'
 alias reload='exec zsh'
 
 #git
@@ -17,7 +17,7 @@ alias gs='git status'
 # %D - ref names
 # %s - commit message
 # %n - new line
-alias gl='git log --stat --graph --all --pretty=format:"%C(magenta)%h %C(white) %an  %ar%C(auto)  %D%n%s%n"'
+alias gl='git log --graph --all --pretty=format:"%C(magenta)%h %C(white) %an  %ar%C(auto)  %D%n%s%n"'
 
 br() {
     # --preview will show the result of call from passed param, e.g. here, git show returns commit info

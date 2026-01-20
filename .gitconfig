@@ -33,6 +33,6 @@
 	upstream = green
 	plain = blue
 [core]
-	editor = code
+	editor = zed
 [help]
 	autocorrect = prompt

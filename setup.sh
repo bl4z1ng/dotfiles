@@ -48,10 +48,9 @@ brew install --cask ticktick
 brew install --cask telegram-desktop
 
 #code
-brew install --cask visual-studio-code
-brew install --cask zed
-# TODO: add code
 #ln -s -F $HOME/.dotfiles/.code $HOME/.code
+# brew install --cask visual-studio-code
+brew install --cask zed
 
 # utilities
 # shortcuts cheat sheet
