@@ -51,6 +51,8 @@ brew install --cask telegram-desktop
 #ln -s -F $HOME/.dotfiles/.code $HOME/.code
 # brew install --cask visual-studio-code
 brew install --cask zed
+brew install --cask docker-desktop
+brew install opencode
 
 # utilities
 # shortcuts cheat sheet
@@ -61,5 +63,5 @@ brew install --cask jordanbaird-ice
 brew install --cask the-unarchiver
 # turn off apple music popups
 brew install --cask notunes
-# man iteration with examples 
+# man iteration with examples
 brew install tlrc
