@@ -32,6 +32,9 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+# node
+eval "$(fnm env --use-on-cd --shell zsh)"
+
 # function, that is called just before new terminal prompt is shown
 # so, in that case, each new prompt reloads aliases (useful, if tweaking them a lot)
 precmd() {

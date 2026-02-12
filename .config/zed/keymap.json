@@ -62,5 +62,16 @@
     "bindings": {
       "cmd-e": "project_panel::ToggleFocus"
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-s": null
+    }
+  },
+  {
+    "bindings": {
+      "cmd-shift-s": "editor::SplitSelectionIntoLines"
+    }
   }
 ]

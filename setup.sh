@@ -47,7 +47,12 @@ brew install --cask raycast
 brew install --cask ticktick
 brew install --cask telegram-desktop
 
-#code
+# code
+#
+# JS
+# brew install fnm
+# fnm install --lts
+
 #ln -s -F $HOME/.dotfiles/.code $HOME/.code
 # brew install --cask visual-studio-code
 brew install --cask zed
