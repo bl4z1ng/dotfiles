@@ -24,3 +24,6 @@ defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 12
 defaults write com.apple.dock autohide-time-modifier -float 0.3
 defaults write com.apple.dock autohide-delay -float 0
 #killall Dock
+
+# always light theme for safari
+defaults write com.apple.Safari NSRequiresAquaSystemAppearance -bool yes

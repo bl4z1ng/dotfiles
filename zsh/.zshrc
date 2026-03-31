@@ -3,7 +3,7 @@ export PATH=/opt/homebrew/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh" # path to your OMZ install.
 zstyle ':omz:update' mode disabled  # disable automatic updates
 
-ZSH_THEME="sorin" # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="custom" # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 HIST_STAMPS="dd.mm.yyyy" # stamp shown in the history command outputs
 
@@ -40,3 +40,6 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 precmd() {
     source $HOME/.dotfiles/zsh/aliases.zsh
 }
+
+# utils
+alias fo='ls | fzf | xargs zed'

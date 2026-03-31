@@ -25,12 +25,6 @@
     },
   },
   {
-      "context": "Workspace",
-      "bindings": {
-        "ctrl-`": "workspace::ToggleBottomDock"
-      }
-  },
-  {
       "context": "Editor || Workspace",
       "bindings": {
         "ctrl-shift-e": "workspace::ToggleLeftDock"
@@ -72,6 +66,78 @@
   {
     "bindings": {
       "cmd-shift-s": "editor::SplitSelectionIntoLines"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-`": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-`": null
+    }
+  },
+  {
+    "bindings": {
+      "cmd-d": "debug_panel::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-d": "debug_panel::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-d": "debug_panel::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "cmd-shift-d": "debug_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "cmd-shift-d": "debug_panel::ToggleFocus"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-d": "debug_panel::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "cmd-d": [
+        "editor::SelectNext",
+        {
+          "replace_newest": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-d": [
+        "editor::SelectNext",
+        {
+          "replace_newest": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-d": "pane::SplitRight"
     }
   }
 ]

@@ -11,3 +11,4 @@
 !.config/zed/settings.json
 
 **/.vscode
+**/cagent

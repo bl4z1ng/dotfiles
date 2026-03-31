@@ -21,6 +21,9 @@ ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 brew install zsh
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
+#theme export
+ln -s ~/.dotfiles/zsh/themes/custom.zsh-theme ~/.oh-my-zsh/themes/custom.zsh-theme
+
 brew install --cask ghostty
 brew install fzf
 
@@ -51,6 +54,7 @@ brew install --cask telegram-desktop
 #
 # JS
 # brew install fnm
+# brew install pnpm
 # fnm install --lts
 
 #ln -s -F $HOME/.dotfiles/.code $HOME/.code
@@ -58,6 +62,8 @@ brew install --cask telegram-desktop
 brew install --cask zed
 brew install --cask docker-desktop
 brew install opencode
+
+brew install --cask obs
 
 # utilities
 # shortcuts cheat sheet
