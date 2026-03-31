@@ -42,19 +42,9 @@
     }
   },
   {
-    "bindings": {
-      "cmd-g": "git_panel::ToggleFocus"
-    }
-  },
-  {
     "context": "Workspace",
     "bindings": {
       "ctrl-shift-g": null
-    }
-  },
-  {
-    "bindings": {
-      "cmd-e": "project_panel::ToggleFocus"
     }
   },
   {
@@ -81,21 +71,6 @@
     }
   },
   {
-    "bindings": {
-      "cmd-d": "debug_panel::Toggle"
-    }
-  },
-  {
-    "bindings": {
-      "cmd-d": "debug_panel::Toggle"
-    }
-  },
-  {
-    "bindings": {
-      "cmd-d": "debug_panel::Toggle"
-    }
-  },
-  {
     "context": "Workspace",
     "unbind": {
       "cmd-shift-d": "debug_panel::ToggleFocus"
@@ -105,11 +80,6 @@
     "context": "Workspace",
     "unbind": {
       "cmd-shift-d": "debug_panel::ToggleFocus"
-    }
-  },
-  {
-    "bindings": {
-      "cmd-d": "debug_panel::Toggle"
     }
   },
   {
@@ -138,6 +108,48 @@
     "context": "Terminal",
     "bindings": {
       "cmd-d": "pane::SplitRight"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-i": "agent::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-t": "task::Spawn"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-i": "agent::Toggle"
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "unbind": {
+      "cmd-i": "agent::ToggleProfileSelector"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-e": "project_panel::Toggle"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "cmd-e": [
+        "buffer_search::Deploy",
+        {
+          "focus": false
+        }
+      ]
+    }
+  },
+  {
+    "bindings": {
+      "cmd-g": "git_panel::Toggle"
     }
   }
 ]
