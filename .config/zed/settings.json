@@ -8,6 +8,13 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // view
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "buffer_font_size": 14.0,
   "buffer_font_weight": 250.0,
@@ -45,6 +52,7 @@
   // AI
   "disable_ai": false,
   "agent": {
+    "dock": "right",
     "favorite_models": [],
     "model_parameters": [],
     "enable_feedback": false,
@@ -68,6 +76,7 @@
     },
   },
   "git_panel": {
+    "dock": "left",
     "scrollbar": {
       "show": "never",
     },
@@ -115,7 +124,7 @@
     "show_user_picture": false,
     "show_onboarding_banner": true,
     "show_project_items": true,
-    "show_branch_icon": false,
+    "show_branch_status_icon": true,
     "show_sign_in": false,
   },
   "bottom_dock_layout": "contained",
@@ -131,6 +140,7 @@
     "metrics": false,
   },
   "collaboration_panel": {
+    "dock": "left",
     "button": false,
   },
 }
