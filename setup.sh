@@ -49,6 +49,7 @@ brew install --cask bitwarden
 brew install --cask raycast
 brew install --cask ticktick
 brew install --cask telegram-desktop
+brew install --cask reader
 
 # code
 #
@@ -62,6 +63,7 @@ brew install --cask telegram-desktop
 brew install --cask zed
 brew install --cask docker-desktop
 brew install opencode
+brew install --cask tailscale-app
 
 brew install --cask obs
 

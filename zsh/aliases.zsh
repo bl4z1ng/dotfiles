@@ -4,7 +4,7 @@
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 
-alias dots='cd $HOME/.dotfiles && zed .'
+alias dots='zed $HOME'
 alias reload='exec zsh'
 
 #git
