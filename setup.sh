@@ -49,6 +49,7 @@ brew install --cask bitwarden
 brew install --cask raycast
 brew install --cask ticktick
 brew install --cask telegram-desktop
+brew install --cask whatsapp
 brew install --cask reader
 
 # code
@@ -61,15 +62,20 @@ brew install --cask reader
 #ln -s -F $HOME/.dotfiles/.code $HOME/.code
 # brew install --cask visual-studio-code
 brew install --cask zed
+brew install --cask rider
 brew install --cask docker-desktop
 brew install opencode
 brew install --cask tailscale-app
 
-brew install --cask obs
+# claude
+brew install --cask claude-code
+brew install --cask claude
+curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash
 
 # utilities
 # shortcuts cheat sheet
 #brew install --cask keyclu
+brew install --cask obs
 # menu bar management
 brew install --cask jordanbaird-ice
 # archive manager
@@ -78,3 +84,5 @@ brew install --cask the-unarchiver
 brew install --cask notunes
 # man iteration with examples
 brew install tlrc
+# logitech mouse app
+brew install --cask logi-options+

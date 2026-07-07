@@ -14,8 +14,8 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Change paddings in menu bar for a more compact view
-defaults -currentHost write -globalDomain NSStatusItemSpacing -int 6
-defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 12
+#defaults -currentHost write -globalDomain NSStatusItemSpacing -int 6
+#defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 12
 # To reset, use:
 #defaults -currentHost delete -globalDomain NSStatusItemSelectionPadding
 #defaults -currentHost delete -globalDomain NSStatusItemSpacing
