@@ -12,3 +12,8 @@
 
 **/.vscode
 **/cagent
+.config/jgit/
+.config/opencode/plugins/caveman/
+.config/opencode/commands/
+.config/opencode/opencode.json.tui-migration.bak
+.config/opencode/package-lock.json
