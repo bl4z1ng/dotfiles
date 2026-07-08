@@ -134,7 +134,8 @@
   "terminal": {
     "cursor_shape": "bar",
     "font_size": 14.0,
-    "font_weight": 250
+    "font_weight": 250,
+    "font_family": "JetBrainsMono Nerd Font Mono"
   },
   "telemetry": {
     "diagnostics": false,

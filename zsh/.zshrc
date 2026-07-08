@@ -1,5 +1,7 @@
 export PATH=/opt/homebrew/bin:$PATH
 export PATH="$HOME/.local/bin:$PATH"
+export DOTNET_ROOT="$HOME/.dotnet"
+export PATH="$DOTNET_ROOT:$PATH"
 
 export ZSH="$HOME/.oh-my-zsh" # path to your OMZ install.
 zstyle ':omz:update' mode disabled  # disable automatic updates
