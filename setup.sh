@@ -86,3 +86,5 @@ brew install --cask notunes
 brew install tlrc
 # logitech mouse app
 brew install --cask logi-options+
+# audible de-drm
+brew install --cask openaudible

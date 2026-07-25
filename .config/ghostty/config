@@ -1,9 +1,9 @@
 # Window
 background-blur = 20
 background-opacity = 0.8
-window-height = 30
-window-width = 110
-window-step-resize = true
+#window-height = 30
+#window-width = 110
+#window-step-resize = true
 macos-titlebar-style = transparent
 window-colorspace = display-p3
 # remembers window position and pwd after quit
@@ -29,4 +29,4 @@ shell-integration = zsh
 
 keybind = performable:cmd+c=copy_to_clipboard
 keybind = performable:cmd+r=prompt_tab_title
-keybind = performable:cmd+k=toggle_command_palette
+keybind = performable:cmd+shift+k=toggle_command_palette
