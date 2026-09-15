@@ -34,5 +34,6 @@
 	plain = blue
 [core]
 	editor = zed
+	autocrlf = input
 [help]
 	autocorrect = prompt

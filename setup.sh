@@ -77,7 +77,7 @@ curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.
 #brew install --cask keyclu
 brew install --cask obs
 # menu bar management
-brew install --cask jordanbaird-ice
+brew install thaw
 # archive manager
 brew install --cask the-unarchiver
 # turn off apple music popups
