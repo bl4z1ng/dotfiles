@@ -13,7 +13,10 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 # Always open everything in Finder's list view. This is important.
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
-# Change paddings in menu bar for a more compact view
+#0 - old lang menu in the center, 1 - new on cursor
+defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 1
+
+# Change paddings in menu bar for a more compact view (NOT WORKING ON GOLDEN GATE)
 #defaults -currentHost write -globalDomain NSStatusItemSpacing -int 6
 #defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 12
 # To reset, use:

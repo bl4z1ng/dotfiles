@@ -42,11 +42,14 @@ gh auth login
 # apps
 # pick one?
 # configure zen-config here: https://github.com/bl4z1ng/zen-config
-#brew install --cask zen
-brew install --cask arc
+brew install --cask zen
+
+brew install --cask raycast
+brew trust --tap abue-ammar/tinycast
+brew tap abue-ammar/tinycast
+brew install --cask tinycast
 
 brew install --cask bitwarden
-brew install --cask raycast
 brew install --cask ticktick
 brew install --cask telegram-desktop
 brew install --cask whatsapp
