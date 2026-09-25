@@ -25,3 +25,5 @@ br() {
     # --bind connects key input (enter) to become action (git checkout)
     git branch | fzf --preview 'git show --color=always {-1}' --bind 'enter:become(git checkout {-1})' --height 40% --layout reverse
 }
+
+alias fo='ls | fzf | xargs zed'

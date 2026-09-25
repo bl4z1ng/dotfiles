@@ -1,6 +1,6 @@
 # -*- sh -*- vim:set ft=sh ai et sw=4 sts=4:
 # It might be bash like, but I can't have my co-workers knowing I use zsh
-PROMPT='%{$fg[#000000]%}%n@%m %{$fg[green]%}%2~ $(git_prompt_info)%{$reset_color%}%(!.#.$) '
+PROMPT='%n@%m %F{green}%2~%f $(git_prompt_info)%(!.#.$) '
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[red]%}("
-ZSH_THEME_GIT_PROMPT_SUFFIX=")%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%F{red}("
+ZSH_THEME_GIT_PROMPT_SUFFIX=")%f"

@@ -1,4 +1,4 @@
-export PATH=/opt/homebrew/bin:$PATH
+eval "$(/opt/homebrew/bin/brew shellenv)" # sets PATH and $HOMEBREW_PREFIX
 export PATH="$HOME/.local/bin:$PATH"
 export DOTNET_ROOT="$HOME/.dotnet"
 export PATH="$DOTNET_ROOT:$PATH"
@@ -17,32 +17,24 @@ HIST_STAMPS="dd.mm.yyyy" # stamp shown in the history command outputs
 #   export EDITOR='nvim'
 # fi
 
-source $ZSH/oh-my-zsh.sh
-
-source <(fzf --zsh)
-source $HOME/.oh-my-zsh/plugins/fzf/fzf.plugin.zsh
-source $HOME/.oh-my-zsh/plugins/macos/macos.plugin.zsh
-source $HOME/.oh-my-zsh/plugins/docker-compose/docker-compose.plugin.zsh
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+# must be set before sourcing oh-my-zsh
 plugins=(
     git
     gh
     macos
     docker
-    zsh-autosuggestions
-    zsh-syntax-highlighting
+    docker-compose
+    fzf
 )
+
+source $ZSH/oh-my-zsh.sh
+
+# installed via brew, not omz custom plugins; syntax-highlighting goes last
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # node
 eval "$(fnm env --use-on-cd --shell zsh)"
 
-# function, that is called just before new terminal prompt is shown
-# so, in that case, each new prompt reloads aliases (useful, if tweaking them a lot)
-precmd() {
-    source $HOME/.dotfiles/zsh/aliases.zsh
-}
-
-# utils
-alias fo='ls | fzf | xargs zed'
+# after editing aliases, run `reload`
+source $HOME/.dotfiles/zsh/aliases.zsh

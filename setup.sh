@@ -26,6 +26,8 @@ ln -s ~/.dotfiles/zsh/themes/custom.zsh-theme ~/.oh-my-zsh/themes/custom.zsh-the
 
 brew install --cask ghostty
 brew install fzf
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
 
 # git
 ln -s -F $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
@@ -33,9 +35,9 @@ ln -s -F $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 brew install git
 brew install gh
 # ssh key gen.
-mkdir $HOME/.ssh/
+mkdir -p $HOME/.ssh/
 ln -s -F $HOME/.dotfiles/ssh/config $HOME/.ssh/config
-sh $HOME/ssh/generate-key.sh
+sh $HOME/.dotfiles/ssh/generate-key.sh
 # Login with created ssh key.
 gh auth login
 
@@ -44,9 +46,8 @@ gh auth login
 # configure zen-config here: https://github.com/bl4z1ng/zen-config
 brew install --cask zen
 
-brew install --cask raycast
-brew trust --tap abue-ammar/tinycast
 brew tap abue-ammar/tinycast
+brew trust --tap abue-ammar/tinycast
 brew install --cask tinycast
 
 brew install --cask bitwarden
@@ -58,7 +59,7 @@ brew install --cask reader
 # code
 #
 # JS
-# brew install fnm
+brew install fnm
 # brew install pnpm
 # fnm install --lts
 

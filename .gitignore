@@ -1,8 +1,7 @@
 .DS_Store
 
-# raycast
-.config/raycast/*
-!.config/raycast/export
+# raycast (app data, not tracked)
+.config/raycast/
 
 # zed, vscode
 .config/zed/*

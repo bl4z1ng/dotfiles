@@ -33,7 +33,7 @@
 	upstream = green
 	plain = blue
 [core]
-	editor = zed
+	editor = zed --wait
 	autocrlf = input
 [help]
 	autocorrect = prompt
