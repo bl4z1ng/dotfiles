@@ -46,6 +46,7 @@ gh auth login
 # configure zen-config here: https://github.com/bl4z1ng/zen-config
 brew install --cask zen
 
+# lightweight launcher
 brew tap abue-ammar/tinycast
 brew trust --tap abue-ammar/tinycast
 brew install --cask tinycast
@@ -53,7 +54,6 @@ brew install --cask tinycast
 brew install --cask bitwarden
 brew install --cask ticktick
 brew install --cask telegram-desktop
-brew install --cask whatsapp
 brew install --cask reader
 
 # code
@@ -84,11 +84,9 @@ brew install --cask obs
 brew install thaw
 # archive manager
 brew install --cask the-unarchiver
-# turn off apple music popups
-brew install --cask notunes
 # man iteration with examples
 brew install tlrc
 # logitech mouse app
 brew install --cask logi-options+
 # audible de-drm
-brew install --cask openaudible
+# brew install --cask openaudible

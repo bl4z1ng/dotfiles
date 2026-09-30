@@ -183,5 +183,11 @@
       "cmd-3": ["pane::ActivateItem", 2],
       "cmd-4": ["pane::ActivateItem", 3]
     }
+  },
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "cmd-r": "agent::RenameSelectedThread"
+    }
   }
 ]

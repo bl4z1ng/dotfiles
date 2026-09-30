@@ -27,3 +27,12 @@ br() {
 }
 
 alias fo='ls | fzf | xargs zed'
+
+# harness picker, used by zed agent.terminal_init_command
+# clear wipes the echoed init command zed types into the terminal
+agent_pick() {
+    clear
+    local agent
+    agent=$(printf 'claude\nopencode' | fzf --prompt='Agent: ' --height=4 --reverse --no-info) || return
+    exec $agent
+}

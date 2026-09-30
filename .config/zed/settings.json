@@ -7,10 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  // view
   "agent_servers": {
 
   },
+  // view
   "cli_default_open_behavior": "existing_window",
   "project_panel": {
     "dock": "left"
@@ -56,7 +56,7 @@
   // AI
   "disable_ai": false,
   "agent": {
-    "terminal_init_command": "agent=$(printf 'claude\nopencode' | fzf --prompt='Agent: ' --height=4 --reverse --no-info) && exec $agent",
+    "terminal_init_command": "agent_pick",
     "play_sound_when_agent_done": "when_hidden",
     "dock": "right",
     "favorite_models": [],
